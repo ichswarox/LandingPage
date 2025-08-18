@@ -1,1 +1,102 @@
-live server
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>跨境Ai全流程</title>
+    <link rel="icon" type="image/png" href="/fire.png" sizes="32x32">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            /* 关键修改2：禁用全局文本选择 */
+            -webkit-user-select: none; /* Safari */
+            -ms-user-select: none; /* IE 10+ */
+            user-select: none; /* Standard */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+            padding: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        img {
+            width: auto;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            /* 关键修改3：防止图片被拖动保存 */
+            -webkit-user-drag: none;
+            pointer-events: none; /* 默认禁用所有图片的鼠标事件 */
+        }
+        
+        /* 手机端图片默认隐藏 */
+        .mobile-img {
+            display: none;
+        }
+        
+        /* 图片链接容器样式 */
+        .img-link-container {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+        }
+        
+        /* 媒体查询：当屏幕宽度小于768px时（手机端） */
+        @media (max-width: 767px) {
+            .desktop-img { display: none; }
+            .mobile-img { display: block; }
+        }
+
+        /* 桌面端隐藏手机图片 */
+        @media (min-width: 768px) {
+            .mobile-img { display: none; }
+        }
+
+        /* 关键修改4：为需要点击的元素恢复鼠标事件 */
+        .clickable-image,
+        .clickable-area {
+            pointer-events: auto; /* 恢复鼠标事件 */
+            cursor: pointer;
+        }
+    </style>
+    
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="97a5aaa5-a2c5-4ca5-9f48-901374a3aeaf";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <script>
+!function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"3N4W6gxS0Ji8vqov",ck:"3N4W6gxS0Ji8vqov",autoTrack:true,screenRecord:true});
+</script>
+    
+</head>
+<body oncontextmenu="return false;">
+    <div class="container">
+        <img class="desktop-img" src="https://html.neoxu.store/img/pc-no-allow@2x.webp" alt="Desktop Image 1"> 
+        
+        <img class="mobile-img" src="https://html.neoxu.store/img/start@2x.webp" alt="Mobile Image 1">
+        <img class="mobile-img" src="https://html.neoxu.store/img/ai-landing-mobile-1@2x.webp" alt="Mobile Image 1">
+        <img class="mobile-img" src="https://html.neoxu.store/img/ai-landing-mobile-2@2x.webp" alt="Mobile Image 2">
+        <img class="mobile-img" src="https://html.neoxu.store/img/ai-landing-mobile-3@2x.webp" alt="Mobile Image 3">
+        <img class="mobile-img" src="https://html.neoxu.store/img/ai-landing-mobile-4@2x.webp" alt="Mobile Image 3">
+        <img class="mobile-img" src="https://html.neoxu.store/img/ai-landing-mobile-5@2x.webp" alt="Mobile Image 3">
+        <img class="mobile-img" src="https://html.neoxu.store/img/ai-landing-mobile-6@2x.webp" alt="Mobile Image 3">
+        
+        <div class="img-link-container">
+            <img class="mobile-img" src="https://html.neoxu.store/img/ai-landing-mobile-7@2x.webp" alt="Mobile Image 4">
+            
+            <a href="https://store.neoxu.store/buy/3" class="clickable-area"
+               style="position: absolute; left: 0; top: 0; width: 50%; height: 100%; display: block; z-index: 1;"></a>
+            
+            <a href="https://store.neoxu.store/buy/5" class="clickable-area"
+               style="position: absolute; right: 0; top: 0; width: 50%; height: 100%; display: block; z-index: 1;"></a>
+        </div>
+
+        <img class="mobile-img" src="https://html.neoxu.store/img/ai-landing-mobile-9@2x.webp" alt="Mobile Image 5">
+        <img class="mobile-img" src="https://html.neoxu.store/img/ai-landing-mobile-10@2x.webp" alt="Mobile Image 6">
+        <img class="mobile-img" src="https://html.neoxu.store/img/ai-landing-mobile-11@2x.webp" alt="Mobile Image 7">
+
+        <img class="mobile-img clickable-image" src="https://html.neoxu.store/img/ai-landing-mobile-12@2x.webp" alt="Mobile Image 7" onclick="$crisp.push(['do', 'chat:open'])">
+    </div>
+</body>
+</html>
