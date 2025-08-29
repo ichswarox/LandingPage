@@ -13,6 +13,7 @@
             -webkit-user-select: none; /* Safari */
             -ms-user-select: none; /* IE 10+ */
             user-select: none; /* Standard */
+            background-color: #000000; /* Black background */
         }
         .container {
             display: flex;
@@ -21,6 +22,8 @@
             gap: 0;
             padding: 0;
             width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
             box-sizing: border-box;
         }
         img {
@@ -33,9 +36,9 @@
             pointer-events: none; /* 默认禁用所有图片的鼠标事件 */
         }
         
-        /* 手机端图片默认隐藏 */
+        /* 手机端图片默认显示 */
         .mobile-img {
-            display: none;
+            display: block;
         }
         
         /* 图片链接容器样式 */
@@ -48,12 +51,6 @@
         /* 媒体查询：当屏幕宽度小于768px时（手机端） */
         @media (max-width: 767px) {
             .desktop-img { display: none; }
-            .mobile-img { display: block; }
-        }
-
-        /* 桌面端隐藏手机图片 */
-        @media (min-width: 768px) {
-            .mobile-img { display: none; }
         }
 
         /* 关键修改4：为需要点击的元素恢复鼠标事件 */
@@ -72,10 +69,8 @@
 </head>
 <body oncontextmenu="return false;">
     <div class="container">
-        <img class="desktop-img" src="/img/pc-no-allow@2x.webp" alt="Desktop Image 1"> 
-        
         <img class="mobile-img" src="/img/Hero@2x.webp" alt="Mobile Image 1">
-        <div style="max-width: 1278px; max-height: 718px; width: 100%;">
+        <div style="max-width: 600px; width: 100%;">
   <div style="left: 0px; width: 100%; height: 0px; position: relative; padding-bottom: 56.1815%; overflow: hidden;">
     <iframe src="/demo/untitled.189.html"
                  allowfullscreen
