@@ -10,6 +10,23 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-967889651">
     </script>
+    <!-- Event snippet for Website sale conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-967889651/aMu_CPOe848YEPOlw80D',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -117,7 +134,7 @@
         <img class="desktop-img" src="/img/slice4@2x.webp" alt="Desktop Image 4">
         
         <img class="mobile-img" src="/img/slice1@2x.webp" alt="Mobile Image 1">
-        <a href="https://wa.me/8613237610083" target="_blank" class="clickable-area">
+        <a href="https://wa.me/8613237610083" target="_blank" class="clickable-area" onclick="return gtag_report_conversion('https://wa.me/8613237610083');">
             <img class="mobile-img" src="/img/slice2@2x.webp" alt="Mobile Image 2">
         </a>
         <img class="mobile-img" src="/img/slice3@2x.webp" alt="Mobile Image 3">
