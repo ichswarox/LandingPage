@@ -79,8 +79,7 @@ function gtag_report_conversion(url) {
             pointer-events: none; /* 默认禁用所有图片的鼠标事件 */
         }
 
-        /* PC端图片样式 */
-        .desktop-img {
+        .container img {
             max-width: 600px !important;
             margin: 0 auto;
             width: 100%;
@@ -92,17 +91,6 @@ function gtag_report_conversion(url) {
             width: 100%;
             max-width: 600px;
             margin: 0 auto;
-        }
-        
-        /* 媒体查询：当屏幕宽度小于768px时（手机端） */
-        @media (max-width: 767px) {
-            .desktop-img { display: none; }
-            .mobile-img { display: block; }
-        }
-
-        /* 桌面端隐藏手机图片 */
-        @media (min-width: 768px) {
-            .mobile-img { display: none; }
         }
 
         /* 关键修改4：为需要点击的元素恢复鼠标事件 */
@@ -121,19 +109,19 @@ function gtag_report_conversion(url) {
 </head>
 <body oncontextmenu="return false;">
     <div class="container">
-        <img class="desktop-img" src="/img/Hero@2x.webp" alt="Hero Image">
+        <img  src="/img/Hero@2x.webp" alt="Hero Image">
         
         <a href="https://wa.me/8613237610083" target="_blank" class="clickable-area" onclick="return gtag_report_conversion('https://wa.me/8613237610083');">
-        <img class="desktop-img" src="/img/Price@2x.webp" alt="Price Image">
+        <img  src="/img/Price@2x.webp" alt="Price Image">
         </a>
 
         <a href="https://wa.me/8613237610083" target="_blank" class="clickable-area" onclick="return gtag_report_conversion('https://wa.me/8613237610083');">
-        <img class="desktop-img" src="/img/CTA-Button@2x.webp" alt="CTA Button Image">
+        <img  src="/img/CTA-Button@2x.webp" alt="CTA Button Image">
         </a>
 
-        <img class="desktop-img" src="/img/Comment@2x.webp" alt="Comment Image">
+        <img  src="/img/Comment@2x.webp" alt="Comment Image">
 
-        <img class="desktop-img" src="/img/FAQ@2x.webp" alt="FAQ Image">
+        <img  src="/img/FAQ@2x.webp" alt="FAQ Image">
     </div>
 </body>
 </html>
