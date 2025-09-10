@@ -78,11 +78,6 @@ function gtag_report_conversion(url) {
             -webkit-user-drag: none;
             pointer-events: none; /* 默认禁用所有图片的鼠标事件 */
         }
-        
-        /* 手机端图片默认隐藏 */
-        .mobile-img {
-            display: none;
-        }
 
         /* PC端图片样式 */
         .desktop-img {
@@ -126,19 +121,19 @@ function gtag_report_conversion(url) {
 </head>
 <body oncontextmenu="return false;">
     <div class="container">
-        <img class="desktop-img" src="/img/slice1@2x.webp" alt="Desktop Image 1">
-        <a href="https://wa.me/8613237610083" target="_blank" class="clickable-area">
-            <img class="desktop-img" src="/img/slice2@2x.webp" alt="Desktop Image 2">
-        </a>
-        <img class="desktop-img" src="/img/slice3@2x.webp" alt="Desktop Image 3">
-        <img class="desktop-img" src="/img/slice4@2x.webp" alt="Desktop Image 4">
+        <img class="desktop-img" src="/img/Hero@2x.webp" alt="Hero Image">
         
-        <img class="mobile-img" src="/img/slice1@2x.webp" alt="Mobile Image 1">
         <a href="https://wa.me/8613237610083" target="_blank" class="clickable-area" onclick="return gtag_report_conversion('https://wa.me/8613237610083');">
-            <img class="mobile-img" src="/img/slice2@2x.webp" alt="Mobile Image 2">
+        <img class="desktop-img" src="/img/Price@2x.webp" alt="Price Image">
         </a>
-        <img class="mobile-img" src="/img/slice3@2x.webp" alt="Mobile Image 3">
-        <img class="mobile-img" src="/img/slice4@2x.webp" alt="Mobile Image 4">
+
+        <a href="https://wa.me/8613237610083" target="_blank" class="clickable-area" onclick="return gtag_report_conversion('https://wa.me/8613237610083');">
+        <img class="desktop-img" src="/img/CTA-Button@2x.webp" alt="CTA Button Image">
+        </a>
+
+        <img class="desktop-img" src="/img/Comment@2x.webp" alt="Comment Image">
+
+        <img class="desktop-img" src="/img/FAQ@2x.webp" alt="FAQ Image">
     </div>
 </body>
 </html>
